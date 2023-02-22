@@ -1,24 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
 </head>
+
 <body>
-    <form action="/" method="get">
-        <label for="km">km da percorrere</label>
-        <input type="number" id="km" value="">
-        <label for="age">Età</label>
-        <select id="age">
-            <option>Maggiorenne</option>
-            <option>Minorenne</option>
-            <option>Over 65</option>
-        </select>
-        <label for="inputButton"></label>
-        <button type="button" id="inputButton">Genera</button>
-    </form>
+    <main>
+        <section>
+            <div>
+                <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                <div class="box-white">
+                    <form action="" method="get">
+                        <div class="inputs">
+                            <div class="column">
+                                <label for="name">Nome Cognome</label>
+                                <input type="text" class="input" id="name">
+                            </div>
+                            <div class="column">
+                                <label for="km">km da percorrere</label>
+                                <input type="number" class="input" id="km" value="">
+                            </div>
+                            <div class="column">
+                                <label for="age">Fascia di Età</label>
+                                <select id="age" class="input">
+                                    <option>Maggiorenne</option>
+                                    <option>Minorenne</option>
+                                    <option>Over 65</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <div>
+                                <label for="inputButton"></label>
+                                <button type="button" class="btn" id="inputButton">Genera</button>
+                            </div>
+                            <div>
+                                <label for="input-reset"></label>
+                                <button type="reset" class="btn" id="input-reset">Annulla</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div >
+                <div>
+                    <h1>IL TUO BIGLIETTO</h1>
+                    <div class="box-white ticket">
+                        <h3>DETTAGLIO PASSEGGERI</h3>
+                        <div class="table">
+                            <div class="passenger">
+                                <h3>NOME PASSEGGERO</h3>
+                                <div id="person"></div>
+                            </div>
+                            <div class="details">
+                                <h4>Offerta</h4>
+                                <div id="type"></div>
+                            </div>
+                            <div class="details">
+                                <h4>Carrozza</h4>
+                                <div id="carrozza"></div>
+                            </div>
+                            <div class="details">
+                                <h4>Codice CP</h4>
+                                <div id="cp"></div>
+                            </div>
+                            <div class="details">
+                                <h4>Costo Biglietto</h4>
+                                <div id="prezzo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="js/main.js"></script>
 </body>
+
 </html>
+
+
+
+
+<!-- <form action="/" method="get">
+    <label for="km">km da percorrere</label>
+    <input type="number" id="km" value="">
+    <label for="age">Età</label>
+    <select id="age">
+        <option>Maggiorenne</option>
+        <option>Minorenne</option>
+        <option>Over 65</option>
+    </select>
+    <label for="inputButton"></label>
+    <button type="button" id="inputButton">Genera</button>
+</form> -->
